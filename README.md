@@ -76,6 +76,28 @@ Esse projeto tem como objetivo a construção de um relatório feito no power BI
 ## Visualização do Painel: 
 ![painel](gifs/northwind.gif)
 
+## Estrutura do repositório:
+------------
+
+
+    ├── requirements.txt          <- O arquivo de requisitos para reproduzir o ambiente de análise, por exemplo, gerado com `pip congelamento > requisitos.txt
+    │
+    ├── LICENSE
+    │
+    ├── README.md                 <- O Readme de nível superior para desenvolvedores que usam esse projeto
+    │ 
+    ├── gifs                      <- contém os gifs da arquitetura do projeto e visualização do painel
+    │
+    ├── Imagem                    <- Contém a logo do projeto e os layouts das páginas
+    │
+    ├── relatório                 <- Contém o relatório de indicadores da NorthWind
+    │
+    ├── power BI                  <- Contém o arquivo power BI do painel interativo
+    │   
+    ├── Arquivos                  <- Contém os dataset utilizados no projeto, antes e depois do pré-processamento
+    │
+    └── caderno                   <- caderno jupyter notebook utilizado para o pré-processamento de dados
+
 
 ## Conclusão
 Neste projeto, abordamos um conjunto abrangente de etapas que nos permitiram transformar dados brutos em insights acionáveis para a Northwind Traders. Destacou a importância de um pré-processamento de dados robusto, garantindo a qualidade e integridade dos dados para análises subsequentes e o uso do Power BI permitiu criar visualizações interativas e acessíveis, facilitando a compreensão dos dados e a geração de insights e por fim, a integração de design no Figma reforçou a identidade visual da marca, proporcionando uma experiência coesa e profissional. 
