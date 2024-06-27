@@ -4,12 +4,22 @@
  <td><img src="imagens/icon/ico-nortwind.jpeg" width="850" style="display: block; margin: 0 auto;" alt="Dinha"> </td>
   </div>
 
-
+## Arquitetura do Projeto
+![arquitetura do Projeto](gifs/arquiteturanorthwind.gif)
 
 ## Introdução
   
 Esse projeto tem como objetivo a construção de um relatório feito no power BI com a disponibilização de 14 tabelas da empresa fictícia “Northwind”. Essa empresa enfrenta problemas de gerenciamento e análise de dados que devido a grande demanda e crescimento da loja, os métodos antigos deixaram de ser úteis, então esse projeto tem a função de integrar diferentes áreas em apenas um relatório, assim há uma diminuição de conflitos entre elas e um aumento da performance da loja. E para isso, primeiro foi passado pela etapa de pré-processamento de dados, em que eles foram explorados em um arquivo jupyter notebook, para verificar a integridade e resolver qualquer problema que possa causar no momento das análises, e a outra etapa foi a construção do painel no power BI, contendo 7 páginas que buscam integrar diferentes áreas e gerar insights para os tomadores de decisão. 
 * [Link do painel interativo](https://bit.ly/northwindanalytics)
+
+## Tecnologias utilizadas
+<div align="center" style="display: inline_block">
+<img align="center" alt="figma" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+<img align="center" src="https://img.shields.io/badge/Power_BI-000000?style=for-the-badge&logo=powerbi&logoColor=yellow" alt="icon power bi">
+ <img align="center" src="https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=C0881C" alt="colab Logo">
+ <img align="center" src="https://img.shields.io/badge/Python-133DAB?style=for-the-badge&logo=python&logoColor=y1CC0C0" alt="icon python" > 
+</div>
+</div>
 
 ##  Requisitos Essenciais e Critérios de Avaliação
 
@@ -62,6 +72,9 @@ Esse projeto tem como objetivo a construção de um relatório feito no power BI
   - Detalhamento: Documentação detalhada de todas as etapas do projeto
   - Clareza: Explicação clara e fácil de seguir sobre o pré-processamento, construção do painel e design de layouts
   - Revisão: Revisão por pares e feedback de novos membros da equipe
+
+## Visualização do Painel: 
+![painel](gifs/northwind.gif)
 
 
 ## Conclusão
