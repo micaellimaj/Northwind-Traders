@@ -5,7 +5,7 @@
   </div>
 
 ## Arquitetura do Projeto
-![arquitetura do Projeto](gifs/arquiteturanorthwind.gif)
+![arquitetura do Projeto](gifs/arquiteturanorthwind2.gif)
 
 ## Introdução
   
