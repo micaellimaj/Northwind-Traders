@@ -21,6 +21,25 @@ Esse projeto tem como objetivo a construção de um relatório feito no power BI
 </div>
 </div>
 
+## Dados
+| Dataset                  | Descrição                                                                                              | Colunas                                                                                                               | Tamanho     |
+|--------------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------|
+| categories               | Os dados descrevem uma tabela que categoriza produtos com quatro atributos principais.                | `category_id`, `category_name`, `description`, `picture`                                                               | (8, 4)      |
+| customer_customer_demo   | Os dados fornecem informações sobre dois atributos principais de uma tabela que identifica clientes.   | `customer_id`, `customer_type_id`                                                                                      | (0, 2)      |
+| customers_demographics   | Os dados descrevem os atributos de uma tabela que registra informações sobre tipos de clientes.        | `customer_type_id`, `customer_desc`                                                                                    | (0, 2)      |
+| customers                | Os dados fornecem uma descrição dos atributos de uma tabela que identifica clientes e suas informações de contato. | `customer_id`, `Company_name`, `Contact_name`, `Contact_title`, `Address`, `City`, `Postal_code`, `Country`, `Phone`, `fax`, `region` | (91, 11)    |
+| employee_territories     | Os dados fornecem informações sobre dois atributos principais de uma tabela que identifica empregados e os territórios aos quais estão associados. | `employee_id`, `territory_id`                                                                                          | (49, 2)     |
+| employees                | Os dados fornecem uma descrição detalhada dos atributos de uma tabela que identifica empregados e suas informações pessoais e profissionais. | `employee_id`, `Last_name`, `first_name`, `Title`, `title_of_courtesy`, `birth_date`, `Hire_date`, `Address`, `city`, `region`, `postal_code`, `country`, `Home_phone`, `Photo`, `photo_path`, `Notes`, `reports_to`, `extension` | (9, 18)     |
+| order_details            | Os dados descrevem os atributos de uma tabela que registra informações sobre pedidos e produtos.      | `order_id`, `product_id`, `Unit_price`, `Quantity`, `Discount`                                                          | (2155, 5)   |
+| orders                   | Os dados fornecem uma descrição detalhada dos atributos de uma tabela que registra informações sobre pedidos de clientes. | `order_id`, `Customer_id`, `Employee_id`, `required_date`, `Order_date`, `Shipped_date`, `Ship_via`, `Freight`, `Ship_name`, `ship_address`, `Ship_city`, `ship_region`, `Ship_Postal_code`, `ship_country` | (830, 14) |
+| products                 | Os dados fornecem uma descrição detalhada dos atributos de uma tabela que registra informações sobre produtos. | `product_id`, `Product_name`, `Supplier_id`, `Category_id`, `Quantity_per_unit`, `Unit_price`, `Units_in_stock`, `Units_on_order`, `Reorder_level`, `discontinued` | (77, 10)  |
+| region                   | Os dados descrevem os atributos de uma tabela que registra informações sobre regiões.                  | `region_id`, `Region_description`                                                                                       | (4, 2)     |
+| shippers                 | Os dados fornecem uma descrição dos atributos de uma tabela que registra informações sobre transportadoras. | `shipper_id`, `Company_name`, `Phone`                                                                                   | (3, 3)     |
+| supplies                 | Os dados descrevem os atributos de uma tabela que registra informações detalhadas sobre fornecedores.  | `supplier_id`, `company_name`, `contact_name`, `contact_title`, `address`, `city`, `region`, `postal_code`, `country`, `phone`, `fax`, `homepage` | (29, 12)   |
+| territories              | Os dados descrevem os atributos de uma tabela que registra informações sobre territórios.              | `territory_id`, `territory_description`, `region_id`                                                                    | (53, 3)    |
+| us_states                | Os dados fornecem uma descrição dos atributos de uma tabela que registra informações sobre estados.    | `state_id`, `state_name`, `state_abbr`, `state_region`                                                                  | (51, 4)    |
+
+
 ##  Requisitos Essenciais e Critérios de Avaliação
 
 | Requisito Essencial                  | Descrição                                                                                                           | Critério de Avaliação                                                                 | Método de Avaliação                                    |
@@ -33,6 +52,8 @@ Esse projeto tem como objetivo a construção de um relatório feito no power BI
 | Interatividade do Painel             | Implementar funcionalidades interativas no painel, como botões para limpar filtros, visualizar tabelas de dados e navegação entre páginas. | Interatividade fluida, fácil de usar, e que melhora a experiência do usuário. | Testes de usabilidade com usuários finais, feedback de usuários, análise de performance das funcionalidades interativas. |
 | Documentação do Projeto              | Criar documentação detalhada de todas as etapas do projeto, incluindo pré-processamento, construção do painel e design de layouts. | Documentação clara, detalhada e fácil de seguir, cobrindo todas as etapas do projeto. | Revisão por pares, feedback de novos membros da equipe que utilizam a documentação para entendimento do projeto. |
 
+## Visualização do Painel: 
+![painel](gifs/northwind.gif)
 
 ## Etapas do Desenvolvimento: 
 
@@ -73,8 +94,61 @@ Esse projeto tem como objetivo a construção de um relatório feito no power BI
   - Clareza: Explicação clara e fácil de seguir sobre o pré-processamento, construção do painel e design de layouts
   - Revisão: Revisão por pares e feedback de novos membros da equipe
 
-## Visualização do Painel: 
-![painel](gifs/northwind.gif)
+## Capturas das Páginas
+<table>
+  <tr>
+    <td><img src="imagens/capturas/pag1.png" alt="pagina1" width="400"/></td>
+    <td><img src="imagens/capturas/pag2.png" alt="pagina2" width="400"/></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td><img src="imagens/capturas/pag3.png" alt="pagina3" width="400"/></td>
+    <td><img src="imagens/capturas/pag4.png" alt="pagina4" width="400"/></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td><img src="imagens/capturas/pag5.png" alt="pagina5" width="400"/></td>
+    <td><img src="imagens/capturas/pag6.png" alt="pagina6" width="400"/></td>
+  </tr>
+</table>
+
+## Insights do Painel Interativo
+
+Durante a construção do painel interativo, foram gerados diversos insights que podem impactar positivamente as decisões estratégicas da empresa:
+
+### Página Customers
+- **Clientes Concentrados nos EUA**: Estratégia para entender e adaptar a atração de clientes em outros países.
+- **Concentração na Europa e Baixa na América do Sul**: Estratégia para atrair mais clientes na América do Sul.
+- **Distribuição de Funções**: Maior quantidade de proprietários e representantes de vendas em contato com clientes, menor quantidade de assistentes.
+
+### Página Employees
+- **Distribuição de Empregados**: Mais representantes de vendas, pode indicar necessidade de mais empregados ou dados incompletos.
+- **Concentração nos EUA e UK**: Possíveis filiais nesses países, correlacionando com maior número de clientes.
+
+### Página Orders
+- **Pedidos por Região**: Maior quantidade de pedidos na Europa, seguido pela América do Norte e América do Sul. Necessidade de expansão para outras regiões.
+- **Valor do Frete nos EUA**: Maior valor de frete, possivelmente devido ao custo de vida e alta demanda.
+- **Principais Destinatários**: Identificação de destinatários com maior quantidade e preço unitário de pedidos, pesquisa para atrair novos fornecedores e melhorar serviços.
+
+### Página Products
+- **Distribuição de Produtos**: Menor quantidade de produtos na América do Sul, potencial de mercado em expansão.
+- **Produto de Maior Preço**: Thuringer Rostbratwurst com maior preço unitário, alta demanda.
+- **Controle de Estoque**: Gestão de produtos encomendados, recebidos e nível de estoque.
+- **Categorias Principais**: Carne, confecções e condimentos com maior preço unitário.
+
+### Página Supplies
+- **Distribuição de Fornecedores**: Maior concentração na Europa, mercado forte.
+- **Contato com Fornecedores**: Mais representantes de vendas e gerentes de marketing em contato com fornecedores, identificação de responsáveis.
+
+### Página Shippers
+- **Distribuição de Transportadoras**: Visão da distribuição por companhia e forma de contato, facilitando a comunicação e integração entre áreas.
+
+
+
 
 ## Estrutura do repositório:
 ------------
