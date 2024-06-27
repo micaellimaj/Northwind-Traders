@@ -162,7 +162,7 @@ Durante a construção do painel interativo, foram gerados diversos insights que
     │ 
     ├── gifs                      <- contém os gifs da arquitetura do projeto e visualização do painel
     │
-    ├── Imagem                    <- Contém a logo do projeto e os layouts das páginas
+    ├── Imagem                    <- Contém a logo do projeto, os layouts e capturas das páginas
     │
     ├── relatório                 <- Contém o relatório de indicadores da NorthWind
     │
