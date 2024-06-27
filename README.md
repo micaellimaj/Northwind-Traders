@@ -21,7 +21,7 @@ Esse projeto tem como objetivo a construção de um relatório feito no power BI
 </div>
 </div>
 
-## Dados
+## Dados utilizados
 | Dataset                  | Descrição                                                                                              | Colunas                                                                                                               | Tamanho     |
 |--------------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------|
 | categories               | Os dados descrevem uma tabela que categoriza produtos com quatro atributos principais.                | `category_id`, `category_name`, `description`, `picture`                                                               | (8, 4)      |
@@ -52,10 +52,10 @@ Esse projeto tem como objetivo a construção de um relatório feito no power BI
 | Interatividade do Painel             | Implementar funcionalidades interativas no painel, como botões para limpar filtros, visualizar tabelas de dados e navegação entre páginas. | Interatividade fluida, fácil de usar, e que melhora a experiência do usuário. | Testes de usabilidade com usuários finais, feedback de usuários, análise de performance das funcionalidades interativas. |
 | Documentação do Projeto              | Criar documentação detalhada de todas as etapas do projeto, incluindo pré-processamento, construção do painel e design de layouts. | Documentação clara, detalhada e fácil de seguir, cobrindo todas as etapas do projeto. | Revisão por pares, feedback de novos membros da equipe que utilizam a documentação para entendimento do projeto. |
 
-## Visualização do Painel: 
+## Visualização do Painel
 ![painel](gifs/northwind.gif)
 
-## Etapas do Desenvolvimento: 
+## Etapas do Desenvolvimento
 
 - **Pré-processamento de Dados**:
   - Ferramenta: Python no Google Colab
@@ -150,7 +150,7 @@ Durante a construção do painel interativo, foram gerados diversos insights que
 
 
 
-## Estrutura do repositório:
+## Estrutura do repositório
 ------------
 
 
